@@ -1,21 +1,51 @@
 
-  Problem 2: The Docker init SQL only runs on first volume creation. Since postgres never started, tables were never
-  created. The import script now creates the tables itself before importing.
-
-  On the other computer, copy the updated files then run:
-  copy /Y "D:\amused sign up lay bot\docker-compose.yml" "C:\Users\REDuser\Desktop\amused sign up lay bot\"
-  copy /Y "D:\amused sign up lay bot\import-data.ts" "C:\Users\REDuser\Desktop\amused sign up lay bot\"
-  copy /Y "D:\amused sign up lay bot\init-db.sql" "C:\Users\REDuser\Desktop\amused sign up lay bot\"
-  copy /Y "D:\amused sign up lay bot\src\ui\server.ts" "C:\Users\REDuser\Desktop\amused sign up lay bot\src\ui\"
-  copy /Y "D:\amused sign up lay bot\grafana\provisioning\datasources\postgres.yml" "C:\Users\REDuser\Desktop\amused
-  sign up lay bot\grafana\provisioning\datasources\"
-
-  docker compose down
-  docker compose up -d
-  npm run import-data
-  npm run dashboard
-
-  Grafana at http://localhost:3001 — all panels should now show your trade data.
-
-✻ Churned for 1m 35s
-gres.yml"
+Filter logs...
+Auto-scroll: ON
+Clear
+46 lines
+[13:39:10] Logged out: PulseBet (PulseBet)
+[13:39:11] Opening login for PulseBet (PulseBet) → profile pulsebet-1...
+[13:41:19] Profile wiped: pulsebet-1
+[13:41:19] Account removed: PulseBet (PulseBet)
+[13:41:20] Opening login for YesBet (Mark) → profile yesbet-1...
+[13:42:03] Balance set: yesbet → bonus $25 | cash $191
+[13:42:08] Opening login for BetJet (mark) → profile betjet-1...
+[13:42:47] Opening login for BetDeluxe (kiani) → profile betdeluxe-1...
+[13:44:05] Opening login for Noisy (kiani) → profile noisy-1...
+[13:44:43] Opening login for MightyBet (kiani) → profile mightybet-2...
+[13:45:21] Balance set: mightybet → bonus $95 | cash $111
+[13:45:28] Opening login for YesBet (Kiani) → profile yesbet-2...
+[13:46:07] Balance set: yesbet → bonus $100 | cash $100
+[13:39:10] Logged out: PulseBet (PulseBet)
+[13:39:11] Opening login for PulseBet (PulseBet) → profile pulsebet-1...
+[13:41:19] Profile wiped: pulsebet-1
+[13:41:19] Account removed: PulseBet (PulseBet)
+[13:41:20] Opening login for YesBet (Mark) → profile yesbet-1...
+[13:42:03] Balance set: yesbet → bonus $25 | cash $191
+[13:42:08] Opening login for BetJet (mark) → profile betjet-1...
+[13:42:47] Opening login for BetDeluxe (kiani) → profile betdeluxe-1...
+[13:44:05] Opening login for Noisy (kiani) → profile noisy-1...
+[13:44:43] Opening login for MightyBet (kiani) → profile mightybet-2...
+[13:45:21] Balance set: mightybet → bonus $95 | cash $111
+[13:45:28] Opening login for YesBet (Kiani) → profile yesbet-2...
+[13:46:07] Balance set: yesbet → bonus $100 | cash $100
+[13:49:07] Logged out: YesBet (Mark)
+[13:49:08] Opening login for YesBet (Mark) → profile yesbet-1...
+[13:49:39] Balance set: yesbet → bonus $25 | cash $191.7
+[13:53:50] Logged out: YesBet (Kiani)
+[13:53:53] Logged out: MightyBet (kiani)
+[13:54:01] Starting: npm run bonus:intl -- amused --auto-lay --adaptive --auto-scale --scale-min 6 --scale-max 25 --max-liability 90 --max-exposure 0.025 --min-ret 0.65 --min-time 6 --max-time 25 --watch --partial-hedge --dynamic --interval 15 --cooldown 6 --min-odds 3 --max-odds 10 --min-liq 25 --min-stake 10 --max-drift 0.12 --min-tob 120 --stagger 2
+> bookie-probe-runner@1.0.0 bonus:intl
+> ts-node bonus-execute.ts --mode intl amused --auto-lay --adaptive --auto-scale --scale-min 6 --scale-max 25 --max-liability 90 --max-exposure 0.025 --min-ret 0.65 --min-time 6 --max-time 25 --watch --partial-hedge --dynamic --interval 15 --cooldown 6 --min-odds 3 --max-odds 10 --min-liq 25 --min-stake 10 --max-drift 0.12 --min-tob 120 --stagger 2
+mightybet-2 (kiani): SKIPPED — no profile
+yesbet-1 (Mark): SKIPPED — no profile
+yesbet-2 (Kiani): SKIPPED — no profile
+pulsebet: SKIPPED — not logged in (no profile)
+noisy-1 (kiani): SKIPPED — no profile
+bigbet: SKIPPED — not logged in (no profile)
+betjet-1 (mark): SKIPPED — no profile
+betdeluxe-1 (kiani): SKIPPED — no profile
+betnation: SKIPPED — not logged in (no profile)
+betexpress: SKIPPED — not logged in (no profile)
+No accounts available (all skipped). Run: npm run login -- <bookie>
+[13:54:04] Engine exited (code 0)ing\datasources\postgres.yml"
