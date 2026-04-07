@@ -1,0 +1,6 @@
+ On the other computer, run these in order:
+  copy /Y "D:\amused sign up lay bot\*" "C:\Users\REDuser\Desktop\amused sign up lay bot\"
+  copy /Y "D:\amused sign up lay bot\src\ui\server.ts" "C:\Users\REDuser\Desktop\amused sign up lay
+  bot\src\ui\server.ts"
+  copy /Y "D:\amused sign up lay bot\grafana\provisioning\datasources\postgres.yml" "C:\Users\REDuser\Desktop\amused
+  sign up lay bot\grafana\provisioning\datasources\postgres.yml"
