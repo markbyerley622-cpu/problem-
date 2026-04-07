@@ -1,32 +1,87 @@
-dsignuplaybot-grafana-1  Started                                                                  1.1s
-
-C:\Users\REDuser\Desktop\amused sign up lay bot>npm run import-data
-
-> bookie-probe-runner@1.0.0 import-data
-> ts-node import-data.ts
-
-Waiting for PostgreSQL on port 5435...
-Connected!
-Creating tables...
-Tables ready.
-Imported 192/192 hedge executions
-Imported 195/195 odds changes
-Done!
-
-C:\Users\REDuser\Desktop\amused sign up lay bot>npm run dashboard
-
-> bookie-probe-runner@1.0.0 dashboard
-> ts-node src/ui/server.ts
-
-[session-check] Could not load adapters: Cannot find module 'C:\Users\REDuser\Desktop\arb\src\sports-arb\bookies\amused-adapter'
-Require stack:
-- C:\Users\REDuser\Desktop\amused sign up lay bot\src\ui\server.ts
-  [telegram] Send-only ready (chat: 8266439750)
-[init] 15 adapters | 0 sessions
-
-  Limitless Bot: http://localhost:3847
-
-
+ched runners (2
+x betjet       ret: -       profit: -        No races with Betfair-matched runners (2
+Placed: 0/3  |  Total profit: $0.00
+[16:04:20] Session: 1 bets, 1 hedged, $6.72 profit, fill rate: 98%
+[16:04:20] Next scan in 16s... (Ctrl+C to stop)
+[16:05:41] Starting: npm run bonus:intl -- amused --auto-lay --adaptive --auto-scale --scale-min 5 --scale-max 25 --max-liability 90 --max-exposure 0.025 --min-ret 0.64 --min-time 5 --max-time 15 --watch --dynamic --interval 15 --cooldown 4 --min-odds 3 --max-odds 12 --min-liq 25 --min-stake 10 --max-drift 0.12 --min-tob 120 --stagger 2
+> bookie-probe-runner@1.0.0 bonus:intl
+> ts-node bonus-execute.ts --mode intl amused --auto-lay --adaptive --auto-scale --scale-min 5 --scale-max 25 --max-liability 90 --max-exposure 0.025 --min-ret 0.64 --min-time 5 --max-time 15 --watch --dynamic --interval 15 --cooldown 4 --min-odds 3 --max-odds 12 --min-liq 25 --min-stake 10 --max-drift 0.12 --min-tob 120 --stagger 2
+pulsebet: SKIPPED — not logged in (no profile)
+betnation: SKIPPED — not logged in (no profile)
+yesbet-2 (Kiani): SKIPPED — no profile
+betexpress: SKIPPED — not logged in (no profile)
+mightybet-2 (kiani): SKIPPED — no profile
+bigbet: SKIPPED — not logged in (no profile)
+[telegram] Skipped (dashboard handles notifications)
+═══════════════════════════════════════════════════
+BONUS BACK EXECUTOR
+═══════════════════════════════════════════════════
+Accounts:   betjet(mark), betdeluxe(kiani), yesbet(Mark), noisy(kiani) (4 active)
+Skipped:    pulsebet, betnation, yesbet-2, betexpress, mightybet-2, bigbet
+Stake:      $100.00
+Min Ret:    DYNAMIC (currently 53% — early 56% / day 55% / metro 53% / night 50% / late 48%)
+Mode:       LIVE — INTERNATIONAL
+Watch:      YES (every 15s)
+Auto-Lay:   ON — will hedge on Betfair automatically
+Hedge Mode: GUARANTEED ONLY (skip if can't fully hedge)
+Max Drift:  12% (lay price cap above expected)
+Stagger:    ON (~2m between bookies)
+Order:      shuffled (anti-pattern)
+Adaptive:   ON — stakes auto-scale per bookie
+Auto-Scale: ON — $5-$25 per bet, min profit $0.50
+[telegram] Send: bot=false chatId=false — attempting re-init...
+[telegram] Skipped (dashboard handles notifications)
+[telegram] Send FAILED — still no bot=false chatId=false (check TELEGRAM_BOTFATHER in .env)
+TTE Window: 5-15m before jump
+Cooldown:   4m per bookie
+Max Liab:   $90 per bet
+Odds:       3-12
+Min Liq:    $25
+Min Stake:  $10 (hard floor)
+[sync] Bonus balances loaded from accounts.json
+── STAKE TIERS ──
+mightybet      $1    tier 0  0/10 clean  134 bets  $172.21 profit  bal $100.00
+yesbet         $1    tier 0  0/10 clean  52 bets  $142.92 profit  bal $100.00
+noisy          $1    tier 0  0/10 clean  73 bets  $101.87 profit  bal $36.00
+betexpress     $1    tier 0  0/10 clean  21 bets  $14.81 profit  bal $2.00
+betnation      $1    tier 0  0/10 clean  44 bets  $125.26 profit  bal $0.00
+pulsebet       $1    tier 0  0/10 clean  71 bets  $97.75 profit  bal $9.00
+betdeluxe      $1    tier 0  0/10 clean  75 bets  $161.24 profit  bal $13.00
+betjet         $1    tier 0  0/10 clean  33 bets  $107.12 profit  bal $25.00
+pulsbet        $1    tier 0  0/10 clean  0 bets  $0.00 profit  bal $9.00
+pulsebet-1     $1    tier 0  1/10 clean  2 bets  $6.84 profit  bal $0.00
+yesbet-1       $1    tier 0  0/10 clean  9 bets  $1.67 profit  bal $22.00
+betjet-1       $1    tier 0  0/10 clean  7 bets  $0.00 profit  bal $25.00
+betdeluxe-1    $1    tier 0  1/10 clean  6 bets  $6.72 profit  bal $1.00
+noisy-1        $1    tier 0  0/10 clean  7 bets  $-0.68 profit  bal $20.00
+mightybet-2    $1    tier 0  0/10 clean  6 bets  $2.23 profit  bal $95.00
+yesbet-2       $1    tier 0  0/10 clean  6 bets  $0.00 profit  bal $100.00
+Total: 546 bets, $939.95 profit
+[dynamic] AEST 16:00 → base retention 53%
+── BETJET (mark) (1/4) — $24.00 [tier 0: $1 | 0/10 clean] ──
+[16:05:44] Launching betjet...
+[STEALTH] Using real Chrome: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[16:05:57] Logged in
+[16:05:57] Logging into Betfair...
+16:05:58.304 [INFO ] Betfair: logged in successfully
+[16:05:58] Betfair balance: $917.92
+16:06:00.174 [INFO ] Betfair: fetched 43 racing markets (38 AU/NZ, 5 intl) with 400 runners
+[16:06:00] Betfair: 5 racing markets (mode: intl)
+[16:06:00] Betfair venues: Pontefract, Exeter
+[16:06:00] Scanning bookie for races...
+[16:06:09] Found 15 race links
+[16:06:09] Unique venues on bookie: Exeter, Pontefract
+[16:06:09]   Exeter: race in 424m — too far out (>15m), skip
+[16:06:09]   Pontefract: race in 411m — too far out (>15m), skip
+betjet       FAIL
+Time:        24.8s
+Error:       No races with Betfair-matched runners (2-30 min to jump window)
+[telegram] Sending notification: layExecuted=false betPlaced=false
+[telegram] Send: bot=false chatId=false — attempting re-init...
+[telegram] Skipped (dashboard handles notifications)
+[telegram] Send FAILED — still no bot=false chatId=false (check TELEGRAM_BOTFATHER in .env)
+betdeluxe-1: DEPLETED — bonus $1.00 < $5 → removed from cycle
+Stagger delay: waiting 2.1m before next bookie...
 
 
 
