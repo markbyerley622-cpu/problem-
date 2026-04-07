@@ -1,90 +1,113 @@
-r bet, min profit $0.50
+5:53:26.923 [INFO ] Betfair: logged in successfully
+[15:53:27] Betfair balance: $989.21
+15:53:28.687 [INFO ] Betfair: fetched 44 racing markets (39 AU/NZ, 5 intl) with 411 runners
+[15:53:28] Betfair: 39 racing markets (mode: au)
+[15:53:28] Betfair venues: Hamilton, Albion Park, Manawatu, Grafton, Menangle, Mildura, Mount Gambier, Gloucester Park
+[15:53:28] Scanning bookie for races...
+[15:53:44] Found 180 race links
+[15:53:44] Unique venues on bookie: grafton, geelong, hamilton, horsham, albion-park, manawatu-nz, Warragul, Bulli, Gosford, Townsville, Mandurah, Q1-Lakeside, Mildura, Menangle, Gloucester-Park, Mount-Gambier
+[15:53:44] Global queue: prioritizing hamilton
+[15:53:44]   hamilton: TTE 6m ★
+[15:53:44]   hamilton: Betfair match found — loading race...
+[15:53:50]   hamilton: Shout Me — ret 66.0% liq 471% tte 6m score 0.88
+[15:53:50]   grafton: race in 31m — too far out (>15m), skip
+[15:53:50]   geelong: no Betfair market — skip
+[15:53:50]   horsham: no Betfair market — skip
+[15:53:50]   albion-park: TTE 13m ★
+[15:53:50]   albion-park: Betfair match found — loading race...
+[15:54:03]   albion-park: Nitrator — SKIP (liq $6 < min $25)
+[15:54:03]   manawatu-nz: race in 16m — too far out (>15m), skip
+[15:54:03]   Warragul: no Betfair market — skip
+[15:54:03]   Bulli: no Betfair market — skip
+[15:54:03]   Gosford: no Betfair market — skip
+[15:54:03]   Townsville: no Betfair market — skip
+[15:54:03]   Mandurah: no Betfair market — skip
+[15:54:03]   Q1-Lakeside: no Betfair market — skip
+[15:54:03]   Mildura: race in 99m — too far out (>15m), skip
+[15:54:03]   Menangle: race in 40m — too far out (>15m), skip
+[15:54:03]   Gloucester-Park: race in 198m — too far out (>15m), skip
+[15:54:03]   Mount-Gambier: race in 143m — too far out (>15m), skip
+[15:54:16]
+Best race: hamilton (https://www.betdeluxe.com.au/racing/Thoroughbred/AUS/hamilton/598552/6/9012561)
+── RETENTION TABLE ──
+#   Runner               Back    Lay     Ret%    Lay$    Liab$   Profit$  Liq$   ToB%
+──────────────────────────────────────────────────────────────────────────────────────
+·  7  Judge Kellie           7.50    8.60   72.2%  $   15  $  116  $ 14.44  $    4    26%
+·  9  American Russ         18.00   24.00   67.4%  $   14  $  327  $ 13.49  $    4    27%
+✓  2  Shout Me               7.50    9.40   66.0%  $   14  $  117  $ 13.21  $   65   471%
+·  6  Sierra Blanca         10.00   14.50   59.2%  $   12  $  168  $ 11.83  $    4    31%
+·  1  The Kill Club          2.10    2.34   45.6%  $   10  $   13  $  9.13  $    5    48%
+·  4  Kamezali               3.30    5.00   44.1%  $    9  $   37  $  8.83  $   16   174%
+·  5  Sweetsop              23.00   60.00   34.9%  $    7  $  433  $  6.97  $    5    73%
+· 10  Les Vosges            51.00  160.00   29.7%  $    6  $  994  $  5.94  $    8   126%
+· 12  Ask For More         101.00  500.00   19.0%  $    4  $ 1996  $  3.80  $    2    50%
+[15:54:16]
+BEST: Shout Me — Back 7.5 / Lay 9.4 — Retention 66.0% — Profit $13.21
+── AUTO-SCALE ──
+Retention:  66.0% → solid (quality 67%, cap $15)
+Safe liq:   $170.18 (within 18% cap)
+Max liq:    $146.88 (60% of depth)
+Max bal:    $152.46 (90% of $989.21)
+Stake:      $20 → $12 ($5-$15 ret-scaled range)
+Profit:     $7.93 (66.0% ret)
+Liability:  $70.07
+[15:54:16] Betfair balance $989.21 covers liability $70.07
+[15:54:16] Pre-bet feasibility: fetching fresh lay ladder...
+[15:54:17] Pre-bet: safe liq $149.23 / required $8.34 = 1789% coverage (cap 10.81)
+[15:54:17] Top-of-book: $77.03 @ 9 — 923% of required lay
+── PLACING BONUS BET ──
+[15:54:17] Browsing page...
+[15:54:23] Clicking odds...
+[15:54:26] Clicking MUI bonus switchBase...
+[15:54:27] Bonus toggled on attempt 1
+[15:54:27] Bonus toggle: ON
+[15:54:34] Estimated return: $78.00
+[15:54:34] Bonus verified: return $78.00 matches bonus ~$78.00
+[15:54:34] PLACING $12.00 BONUS BACK: Shout Me @ 7.5
+[15:54:37] Confirming...
+[15:54:41] BONUS BET PLACED!
+── AUTO-LAY ON BETFAIR ──
+[15:54:41] Fetching fresh Betfair lay ladder...
+[15:54:41] Fresh lay: 9.60 (was 9.40, drift 2.1%)
+[15:54:41] Ladder: $3@9.6 | $36@9.8 | $13@10 | $23@10.5 | $27@11
+[15:54:41] Total depth: $413.62 across 23 levels
+[15:54:41] Price cap: 10.81 (max 15% drift) — safe levels: 4/23, safe liq: $74.47
+[15:54:41]   Sweep: $3.06 @ 9.6
+[15:54:41]     Matched: $3.06 @ 9.60
+[15:54:41]   Sweep: $5.11 @ 9.8
+[15:54:42]     Matched: $5.11 @ 9.80
+══════════════════════════════════════
+HEDGE COMPLETE
+══════════════════════════════════════
+Bet IDs:      424634554702, 424634554840
+Matched:      $8.17 @ avg 9.73 (FULL)
+Liability:    $71.28
+Retention:    56.0%
+Profit:       $6.72 (guaranteed on matched portion)
+Fill rate:    100% ($8.17 / $8.17 required)
+Hedge delay:  1188ms
+15:54:42.663 [ERROR] Betfair API listCurrentOrders error 400: {"faultcode":"Client","faultstring":"ANGX-0002","detail":{"APINGException":{"requestUUID":"ie1-ang26b-prd-01120947-00ad9c51a5","errorCode":"INVALID_INPUT_DATA","errorDetails":"You supplied one or more malformed bet IDs. Bet IDs are of the form \"<exchangeId>:<betId>\" where both the exchange ID and the bet ID parts are non-negative integers"},"exceptionname":"APINGException"}}
+15:54:42.665 [ERROR] Betfair listCurrentOrders error: Error: Betfair API error: 400 Bad Request — {"faultcode":"Client","faultstring":"ANGX-0002","detail":{"APINGException":{"requestUUID":"ie1-ang26b-prd-01120947-00ad9c51a5","errorCode":"INVALID_INPUT_DATA","errorDetails":"You supplied one or more
+[15:54:42] Exposure verify: bet 424634554702,424634554840 not found or unmatched
+[15:54:43] Post-hedge balance: $917.92 (was $989.21)
+[15:54:43] Browser staying open 10s...
+[bonus] betdeluxe-1: balance $1.00 remaining
+betdeluxe    OK
+Runner:      Shout Me @ 7.50
+Lay:         9.40
+Retention:   66.0%
+Lay Stake:   $8.34
+Liability:   $70.07
+Profit:      $7.93
+Bonus:       clicked
+Bet Placed:  yes
+Lay Hedged:  YES — $8.17 @ 9.73 (1188ms)
+Fill Rate:   98%
+Actual Ret:  56.0%
+Actual P&L:  $6.72
+Time:        99.7s
+[telegram] Sending notification: layExecuted=true betPlaced=true
 [telegram] Send: bot=false chatId=false — attempting re-init...
 [telegram] Skipped (dashboard handles notifications)
 [telegram] Send FAILED — still no bot=false chatId=false (check TELEGRAM_BOTFATHER in .env)
-TTE Window: 5-12m before jump
-Cooldown:   8m per bookie
-Max Liab:   $90 per bet
-Odds:       3-15
-Min Liq:    $15
-Min Stake:  $10 (hard floor)
-[sync] Bonus balances loaded from accounts.json
-── STAKE TIERS ──
-mightybet      $1    tier 0  0/10 clean  134 bets  $172.21 profit  bal $100.00
-yesbet         $1    tier 0  0/10 clean  52 bets  $142.92 profit  bal $30.00
-noisy          $1    tier 0  0/10 clean  73 bets  $101.87 profit  bal $36.00
-betexpress     $1    tier 0  0/10 clean  21 bets  $14.81 profit  bal $2.00
-betnation      $1    tier 0  0/10 clean  44 bets  $125.26 profit  bal $0.00
-pulsebet       $1    tier 0  0/10 clean  71 bets  $97.75 profit  bal $9.00
-betdeluxe      $1    tier 0  0/10 clean  75 bets  $161.24 profit  bal $13.00
-betjet         $1    tier 0  0/10 clean  33 bets  $107.12 profit  bal $25.00
-pulsbet        $1    tier 0  0/10 clean  0 bets  $0.00 profit  bal $9.00
-pulsebet-1     $1    tier 0  1/10 clean  2 bets  $6.84 profit  bal $0.00
-yesbet-1       $1    tier 0  0/10 clean  7 bets  $1.67 profit  bal $25.00
-betjet-1       $1    tier 0  0/10 clean  5 bets  $0.00 profit  bal $25.00
-betdeluxe-1    $1    tier 0  0/10 clean  5 bets  $0.00 profit  bal $13.00
-noisy-1        $1    tier 0  1/10 clean  5 bets  $-0.68 profit  bal $20.00
-mightybet-2    $1    tier 0  0/10 clean  6 bets  $2.23 profit  bal $95.00
-yesbet-2       $1    tier 0  0/10 clean  6 bets  $0.00 profit  bal $30.00
-Total: 539 bets, $933.24 profit
-[dynamic] AEST 14:00 → base retention 53%
-[stealth] Cycle variation: tte 3-12m
-── YESBET (Mark) (1/1) — $25.00 [tier 0: $1 | 0/10 clean] ──
-[14:34:26] Launching yesbet...
-[STEALTH] Using real Chrome: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
-[14:34:39] Logged in
-[14:34:39] Logging into Betfair...
-14:34:40.443 [INFO ] Betfair: logged in successfully
-[14:34:41] Betfair balance: $1411.20
-14:34:42.212 [ERROR] Betfair market fetch error: Error: Betfair API error: 400 Bad Request
-[14:34:42] Betfair market fetch returned 0 — retrying in 3s...
-14:34:45.921 [ERROR] Betfair market fetch error: Error: Betfair API error: 400 Bad Request
-[14:34:45] Still 0 markets — trying fetchSportMarkets fallback...
-[14:34:45] Betfair: 0 racing markets (mode: au)
-[14:34:45] Betfair venues: none
-yesbet       FAIL
-Time:        19.5s
-Error:       No Betfair markets available right now (API may be down — try again in a few minutes)
-[telegram] Sending notification: layExecuted=false betPlaced=false
-[telegram] Send: bot=false chatId=false — attempting re-init...
-[telegram] Skipped (dashboard handles notifications)
-[telegram] Send FAILED — still no bot=false chatId=false (check TELEGRAM_BOTFATHER in .env)
-══════════════════════════════════════
-SCAN SUMMARY
-══════════════════════════════════════
-x yesbet       ret: -       profit: -        No Betfair markets available right now (
-Placed: 0/1  |  Total profit: $0.00
-[14:34:46] Session: 0 bets, 0 hedged, $0.00 profit, fill rate: 0%
-[14:34:46] Next scan in 16s... (Ctrl+C to stop)
-── Scan #2 at 14:35:02 ──
-[dynamic] Retention shifted → 53%
-[stealth] Cycle variation: ret 50%, tte 5-15m
-── YESBET (Mark) (1/1) — $25.00 [tier 0: $1 | 0/10 clean] ──
-[14:35:02] Launching yesbet...
-[STEALTH] Using real Chrome: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
-[14:35:15] Logged in
-[14:35:15] Logging into Betfair...
-14:35:16.382 [INFO ] Betfair: logged in successfully
-[14:35:16] Betfair balance: $1411.20
-14:35:17.532 [ERROR] Betfair market fetch error: Error: Betfair API error: 400 Bad Request
-[14:35:17] Betfair market fetch returned 0 — retrying in 3s...
-14:35:21.219 [ERROR] Betfair market fetch error: Error: Betfair API error: 400 Bad Request
-[14:35:21] Still 0 markets — trying fetchSportMarkets fallback...
-[14:35:21] Betfair: 0 racing markets (mode: au)
-[14:35:21] Betfair venues: none
-[14:35:21] Stopping engine...
-yesbet       FAIL
-Time:        18.8s
-Error:       No Betfair markets available right now (API may be down — try again in a few minutes)
-[telegram] Sending notification: layExecuted=false betPlaced=false
-[telegram] Send: bot=false chatId=false — attempting re-init...
-[telegram] Skipped (dashboard handles notifications)
-[telegram] Send FAILED — still no bot=false chatId=false (check TELEGRAM_BOTFATHER in .env)
-══════════════════════════════════════
-SCAN SUMMARY
-══════════════════════════════════════
-x yesbet       ret: -       profit: -        No Betfair markets available right now (
-Placed: 0/1  |  Total profit: $0.00
-[14:35:21] Session: 0 bets, 0 hedged, $0.00 profit, fill rate: 0%
-[14:35:21] Next scan in 17s... (Ctrl+C to stop)
-[14:35:21] Engine exited (code 1))
+Stagger delay: waiting 2.2m before next bookie...
