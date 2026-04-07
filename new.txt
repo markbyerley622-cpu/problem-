@@ -1,75 +1,18 @@
-nd` for details
+Dashboards
+Create and manage dashboards to visualize your data
+Search for dashboards and folders
+Filter by tag
 
-8 vulnerabilities (5 moderate, 1 high, 2 critical)
+Starred
 
-To address issues that do not require attention, run:
-  npm audit fix
 
-To address all issues (including breaking changes), run:
-  npm audit fix --force
+Sort
 
-Run `npm audit` for details.
-npm notice
-npm notice New minor version of npm available! 11.11.1 -> 11.12.1
-npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.1
-npm notice To update run: npm install -g npm@11.12.1
-npm notice
+General
+No results found
 
-C:\Users\REDuser\Desktop\amused sign up lay bot>docker compose up -d
-time="2026-04-07T11:20:11+10:00" level=warning msg="C:\\Users\\REDuser\\Desktop\\amused sign up lay bot\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
-[+] up 28/29
- ✔ Image grafana/promtail:2.9.0            Pulled                                                                  33.0s
- ✔ Image grafana/grafana:10.0.0            Pulled                                                                  36.3s
- ✔ Image grafana/loki:2.9.0                Pulled                                                                  19.3s
- ✔ Network amusedsignuplaybot_default      Created                                                                 0.1s
- ✔ Volume amusedsignuplaybot_grafana-data  Created                                                                 0.0s
- ✔ Container amusedsignuplaybot-loki-1     Started                                                                 0.8s
- - Container amusedsignuplaybot-grafana-1  Starting                                                                1.0s
- ✔ Container amusedsignuplaybot-promtail-1 Started                                                                 0.8s
-Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint amusedsignuplaybot-grafana-1 (30c28f23bfee0a63c0842d9b289d08bd94bca96cd2fe9fb6327d87b64c93eba7): Bind for 0.0.0.0:3000 failed: port is already allocated
+Betting|  Go to folder
+Betting Operations
+Betting
 
-C:\Users\REDuser\Desktop\amused sign up lay bot>docker compose up -d
-time="2026-04-07T11:34:59+10:00" level=warning msg="C:\\Users\\REDuser\\Desktop\\amused sign up lay bot\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
-[+] up 3/3
- ✔ Container amusedsignuplaybot-loki-1     Running                                                                  0.0s
- ✔ Container amusedsignuplaybot-promtail-1 Running                                                                  0.0s
- ✔ Container amusedsignuplaybot-grafana-1  Started                                                                  0.8s
-
-C:\Users\REDuser\Desktop\amused sign up lay bot>npm run dashboard
-
-> bookie-probe-runner@1.0.0 dashboard
-> ts-node src/ui/server.ts
-
-[session-check] Could not load adapters: Cannot find module 'C:\Users\REDuser\Desktop\arb\src\sports-arb\bookies\amused-adapter'
-Require stack:
-- C:\Users\REDuser\Desktop\amused sign up lay bot\src\ui\server.ts
-  [telegram] Send-only ready (chat: 8266439750)
-C:\Users\REDuser\Desktop\amused sign up lay bot\src\ui\server.ts:224
-  const uiType = BOOKIE_UI_TYPE[id];
-                               ^
-TypeError: Cannot read properties of undefined (reading 'sportsbet')
-    at hasAdapter (C:\Users\REDuser\Desktop\amused sign up lay bot\src\ui\server.ts:224:32)
-    at C:\Users\REDuser\Desktop\amused sign up lay bot\src\ui\server.ts:1169:42
-    at Array.map (<anonymous>)
-    at startDashboard (C:\Users\REDuser\Desktop\amused sign up lay bot\src\ui\server.ts:1169:27)
-    at Object.<anonymous> (C:\Users\REDuser\Desktop\amused sign up lay bot\src\ui\server.ts:1181:3)
-    at Module._compile (node:internal/modules/cjs/loader:1829:14)
-    at Module.m._compile (C:\Users\REDuser\Desktop\amused sign up lay bot\node_modules\ts-node\src\index.ts:1618:23)
-    at node:internal/modules/cjs/loader:1969:10
-    at Object.require.extensions.<computed> [as .ts] (C:\Users\REDuser\Desktop\amused sign up lay bot\node_modules\ts-node\src\index.ts:1621:12)
-    at Module.load (node:internal/modules/cjs/loader:1552:32)
-    at Module._load (node:internal/modules/cjs/loader:1354:12)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
-    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
-    at phase4 (C:\Users\REDuser\Desktop\amused sign up lay bot\node_modules\ts-node\src\bin.ts:649:14)
-    at bootstrap (C:\Users\REDuser\Desktop\amused sign up lay bot\node_modules\ts-node\src\bin.ts:95:10)
-    at main (C:\Users\REDuser\Desktop\amused sign up lay bot\node_modules\ts-node\src\bin.ts:55:10)
-    at Object.<anonymous> (C:\Users\REDuser\Desktop\amused sign up lay bot\node_modules\ts-node\src\bin.ts:800:3)
-    at Module._compile (node:internal/modules/cjs/loader:1829:14)
-    at Object.<anonymous> (node:internal/modules/cjs/loader:1969:10)
-    at Module.load (node:internal/modules/cjs/loader:1552:32)
-    at Module._load (node:internal/modules/cjs/loader:1354:12)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
-
-C:\Users\REDuser\Desktop\amused sign up lay bot>
-
+http://localhost:3001/dashboards 
